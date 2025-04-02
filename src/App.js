@@ -1,25 +1,14 @@
 import Counter from "./components/Counter"
-import React, { useState } from 'react'
+import {useSelector} from 'react-redux'
+
 
 const App = () => {
-  const [count, setCount] = useState(0)
-
-  const increment = () => {
-    setCount(prev => prev + 1)
-  }
-
-  const decrement = () => {
-    setCount(prev => prev - 1)
-  }
-
-  const reset = () => {
-    setCount(0)
-  }
-
-  return (
+  
+  const state = useSelector(state => state.count)
+  return (  
     <div className="container">
-      <h1>Counter: {count}</h1>
-      <Counter increment = {increment} decrement = {decrement} reset = {reset}/>
+      <h1>Counter: {state}</h1>
+      <Counter />
     </div>
   )
 }

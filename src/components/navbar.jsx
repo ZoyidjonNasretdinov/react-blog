@@ -12,10 +12,8 @@ const Navbar = () => {
       </Link>
 
       <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <Link className="me-3 py-2 text-dark text-decoration-none" to="/features">Features</Link>
-        <Link className="me-3 py-2 text-dark text-decoration-none" to="/enterprise">Enterprise</Link>
-        <Link className="me-3 py-2 text-dark text-decoration-none" to="/support">Support</Link>
-        <Link className="py-2 text-dark text-decoration-none" to="/pricing">Pricing</Link>
+        <Link className="me-3 py-2 text-dark text-decoration-none" to="/Login">Login</Link>
+        <Link className="me-3 py-2 text-dark text-decoration-none" to="/Register">Register</Link>
       </nav>
     </header>
   )
